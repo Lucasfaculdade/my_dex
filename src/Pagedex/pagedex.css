@@ -1,0 +1,378 @@
+*{
+  margin: 0px;
+}
+nav{
+  height: 100px;
+  display: flex ;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagina-refresh{
+  background-color: transparent;
+  cursor: pointer;
+  border: 0px solid aliceblue;
+}
+
+.navbar-img {
+  width: 300px;
+}
+
+.navbar-fav{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Games', sans-serif;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+.searchbar-container{
+  display: flex;
+  margin: 0px auto;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbar {
+  background-color: white;
+  margin-right: 20px;
+}
+
+.searchbar input {
+  padding: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+}
+
+.searchbar-btn button {
+  background-color: #d81616; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.searchbar-btn button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #d81616;
+}
+  
+.searchbar-btn button:hover {
+  background-color: #17d2f3;
+  color: white;
+}
+
+.filtro{
+  width: 140px;
+  height: 45px;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-family: 'Games', sans-serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+   
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: all 0.5s;
+}
+   
+button:hover::before {
+  width: 100%;
+}
+   
+button:hover {
+  color: black;
+}
+   
+button:active:before {
+  background: #b9b9b9;
+}
+  
+.filtro_gen1{
+  width: 140px;
+  height: 45px;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(252, 252, 252);
+  font-family: 'Games', sans-serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+@font-face {
+  font-family: 'Games';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Games'), url('https://fonts.cdnfonts.com/s/14926/Games.woff') format('woff');
+}
+@font-face {
+  font-family: 'Games';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Games'), url('https://fonts.cdnfonts.com/s/14926/Games-Italic.woff') format('woff');
+}
+
+.filtro_gen2{
+  width: 140px;
+  height: 45px;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(252, 252, 252);
+  font-family: 'Games', sans-serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+  
+.filtro_gen3{
+  width: 140px;
+  height: 45px;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(252, 252, 252);
+  font-family: 'Games', sans-serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+  
+.filtro_gen4{
+  width: 140px;
+  height: 45px;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(252, 252, 252);
+  font-family: 'Games', sans-serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+  
+.filtro_gen5{
+  width: 140px;
+  height: 45px;
+  font-size: 23px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: rgb(252, 252, 252);
+  font-family: 'Games', sans-serif;
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+  
+.pokedex-baseboard {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  padding: 10px;
+}
+
+.pokedex-header{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  padding: 10px;
+}
+
+.pokedex-grid{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+ }
+  
+.pokemon-card{
+  display: flex;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  background-color: aliceblue;
+}
+  
+.pokemon-card:hover {
+  box-shadow: 0 24px 32px 0 rgba(0,0,0,0.48), 0 34px 100px 0 rgba(0,0,0,0.36);
+}
+  
+.pokemon-image {
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
+}
+  
+.pokemon-image-container {
+  padding: 0px 5px;
+}
+  
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+  flex: 1;
+}
+  
+.card-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid aliceblue;
+  text-decoration: inherit;
+  color: inherit;
+}
+  
+.card-top h3 {
+  text-transform: capitalize;
+  font-family: 'Games', sans-serif;
+}
+  
+.card-bottom{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+.pokemon-type{
+  display: flex;
+}
+  
+.pokemon-type-text {
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+  
+.pagination-container{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+  
+.volta{
+  background-color: #17d2f3;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.volta{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #17d2f3;
+}
+
+.volta:hover {
+  background-color: #17d2f3;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.couter{
+  align-items: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: arial, sans-serif;
+  padding: .8rem 1.5rem;
+}
+
+.avanca{
+  background-color: #17d2f3;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.avanca{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #17d2f3;
+}
+
+.avanca:hover {
+  background-color: #17d2f3;
+  color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+.pokemon-heart-btn{
+  border: none;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.25);
+  padding: 4px;
+  cursor: pointer;
+  justify-content:right;
+}
+  
+.not-found-text{
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.App {
+  text-align:right;
+  }
